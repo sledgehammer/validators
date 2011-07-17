@@ -4,7 +4,7 @@
  *
  * @package Validators
  */
-
+namespace SledgeHammer;
 class Validators extends Object implements Validator {
 
 	public $Validators; // Array met validator objecten

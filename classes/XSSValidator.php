@@ -5,7 +5,7 @@
  *
  * @package Validators
  */
-
+namespace SledgeHammer;
 class XSSValidator extends Object implements Validator {
 
 	function validate($value, &$error_message) { // [bool]

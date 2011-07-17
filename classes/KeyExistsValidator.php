@@ -4,7 +4,7 @@
  *
  * @package Validators
  */
-
+namespace SledgeHammer;
 class KeyExistsValidator extends Object implements Validator {
 
 	public 

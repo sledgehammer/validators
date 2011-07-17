@@ -4,7 +4,7 @@
  *
  * @package Validators
  */
-
+namespace SledgeHammer;
 class RegularExpressionValidator extends Object implements Validator {
 
 	private 

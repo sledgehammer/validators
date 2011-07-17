@@ -15,7 +15,7 @@
  * @param Validator $Validator
  * @return bool
  */
- function validate($value, &$error_message, $Validator) {
+ function validate($value, &$error_message, SledgeHammer\Validator $Validator) {
  	return $Validator->validate($value, $error_message);
  }
 ?>

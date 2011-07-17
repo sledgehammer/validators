@@ -4,7 +4,7 @@
  *
  * @package Validators
  */
-
+namespace SledgeHammer;
 class PostalcodeValidator extends Object implements Validator {
 
 	function validate($value, &$error_message) {

@@ -4,7 +4,7 @@
  *
  * @package Validators
  */
-
+namespace SledgeHammer;
 interface Validator {
 
 	/**

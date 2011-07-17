@@ -4,7 +4,7 @@
  *
  * @package Validators
  */
-
+namespace SledgeHammer;
 class MaxlengthValidator extends Object implements Validator {
 
 	public 

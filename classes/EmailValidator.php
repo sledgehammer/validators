@@ -7,7 +7,7 @@
  * 
  * @author 	Mark Freese <mfreese@hotelspecials.nl>
  */
-
+namespace SledgeHammer;
 class EmailValidator extends Object implements Validator {
 
 	public

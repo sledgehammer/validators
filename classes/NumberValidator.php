@@ -5,7 +5,7 @@
  *
  * @package Validators
  */
-
+namespace SledgeHammer;
 class NumberValidator extends Object implements Validator {
 
 	private 

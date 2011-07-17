@@ -4,7 +4,7 @@
  *
  * @package Validators
  */
-
+namespace SledgeHammer;
 class NotEmptyValidator extends Object implements Validator {
 
 	function validate($value, &$error_message) {
