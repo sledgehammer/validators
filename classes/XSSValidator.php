@@ -1,11 +1,11 @@
 <?php
+namespace SledgeHammer;
 /**
  * Voorkomt cross site scripting (XSS)
  * Beschermt tegen javascript en html injecties door "<" en ">" niet toe te staan
  *
  * @package Validators
  */
-namespace SledgeHammer;
 class XSSValidator extends Object implements Validator {
 
 	function validate($value, &$error_message) { // [bool]
@@ -18,5 +18,7 @@ class XSSValidator extends Object implements Validator {
 		}
 		return true;
 	}
+
 }
+
 ?>

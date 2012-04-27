@@ -1,10 +1,10 @@
 <?php
+namespace SledgeHammer;
 /**
  * Controleerd of de postcode voldoet aan de nederlandse postcode notatie
  *
  * @package Validators
  */
-namespace SledgeHammer;
 class PostalcodeValidator extends Object implements Validator {
 
 	function validate($value, &$error_message) {
@@ -15,5 +15,7 @@ class PostalcodeValidator extends Object implements Validator {
 			return false;
 		}
 	}
+
 }
+
 ?>

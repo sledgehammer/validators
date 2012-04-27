@@ -1,26 +1,31 @@
 <?php
+namespace SledgeHammer;
 /**
  * Controleert of het aantal karakters niet te groter is dan de opgegeven lengte.
  *
  * @package Validators
  */
-namespace SledgeHammer;
 class MaxlengthValidator extends Object implements Validator {
 
-	public 
-		$maximum_length;
+	private $max;
 
-	function __construct($maximum_length) {
-		$this->maximum_length = $maximum_length;
+	/**
+	 *
+	 * @param int $maximum
+	 */
+	function __construct($maximum) {
+		$this->max = $maximum;
 	}
 
 	function validate($value, &$error_message) { // [bool]
-		if (strlen($value) <= $this->maximum_length) {
+		if (strlen($value) <= $this->max) {
 			return true;
 		} else {
-			$error_message = 'Maximum length of '.$this->maximum_length.' exceeded by '.(strlen($value) - $this->maximum_length);
+			$error_message = 'Maximum length of '.$this->max.' exceeded by '.(strlen($value) - $this->max);
 			return false;
 		}
 	}
+
 }
+
 ?>

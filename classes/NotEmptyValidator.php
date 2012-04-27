@@ -1,10 +1,10 @@
 <?php
+namespace SledgeHammer;
 /**
  * Controleert of er een waarde is ingesteld.
  *
  * @package Validators
  */
-namespace SledgeHammer;
 class NotEmptyValidator extends Object implements Validator {
 
 	function validate($value, &$error_message) {
@@ -15,5 +15,7 @@ class NotEmptyValidator extends Object implements Validator {
 			return false;
 		}
 	}
+
 }
+
 ?>

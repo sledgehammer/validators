@@ -1,14 +1,14 @@
 <?php
+namespace SledgeHammer;
+
 /**
  * Controleert of de waarde voorkomt als key in de array.
  *
  * @package Validators
  */
-namespace SledgeHammer;
 class KeyExistsValidator extends Object implements Validator {
 
-	public 
-		$array;
+	private $array;
 
 	function __construct($array = array()) {
 		$this->array = $array;
@@ -22,5 +22,7 @@ class KeyExistsValidator extends Object implements Validator {
 			return false;
 		}
 	}
+
 }
+
 ?>

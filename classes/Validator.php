@@ -1,10 +1,10 @@
 <?php
+namespace SledgeHammer;
 /**
  * Interface voor de Validatie classes
  *
  * @package Validators
  */
-namespace SledgeHammer;
 interface Validator {
 
 	/**
@@ -17,4 +17,5 @@ interface Validator {
 	 */
 	function validate($value, &$error_message);
 }
+
 ?>

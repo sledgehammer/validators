@@ -1,17 +1,27 @@
 <?php
+namespace SledgeHammer;
 /**
  * Controleert of de waarde een getal is.
  * Ook is het mogenlijk om te controleren of het om een geheel getal gaat en/of de waarde binnen een bereik valt
  *
  * @package Validators
  */
-namespace SledgeHammer;
 class NumberValidator extends Object implements Validator {
 
-	private 
-		$minimum, // [NULL|number] Minimum toegestane waarde
-		$maximum, // [NULL|number] Maximum toegestane waarde
-		$integers_only = false; // [bool] true: alleen gehele getallen toestaan
+	/**
+	 * @var  NULL|number Minimum toegestane waarde
+	 */
+	private $minimum;
+
+	/**
+	 * @var NULL|number Maximum toegestane waarde
+	 */
+	private $maximum;
+
+	/**
+	 * @var bool true: alleen gehele getallen toestaan
+	 */
+	private $integers_only = false;
 
 	/**
 	 * @param array $options array('integers_only' => bool, 'minimum' => number, 'maximum' => number)
@@ -59,5 +69,7 @@ class NumberValidator extends Object implements Validator {
 			return false;
 		}
 	}
+
 }
+
 ?>

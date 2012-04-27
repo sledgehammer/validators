@@ -1,19 +1,18 @@
 <?php
+namespace SledgeHammer;
 /**
  * Door middel van een reguliere expressie de waarde controleren
  *
  * @package Validators
  */
-namespace SledgeHammer;
-class RegularExpressionValidator extends Object implements Validator {
+class RegexValidator extends Object implements Validator {
 
-	private 
-		$pattern,
-		$human_readable_description;
+	private $pattern;
+	private $human_readable_description;
 
 	/**
 	 * @param string $pattern De reguliere expressie
-	 * @param string $human_readable_description Korte beschijving van het pattroon zoals "Date-format", "emailaddress", "postalcode", etc
+	 * @param string $human_readable_description Korte beschijving van het pattroon zoals "Date-format yyy-mm-dd", "emailaddress", "postalcode", etc
 	 */
 	function __construct($pattern, $human_readable_description) {
 		$this->pattern = $pattern;
@@ -28,5 +27,7 @@ class RegularExpressionValidator extends Object implements Validator {
 			return false;
 		}
 	}
+
 }
+
 ?>

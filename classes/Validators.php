@@ -1,10 +1,10 @@
 <?php
+namespace SledgeHammer;
 /**
- * Een validator die via meerdere Validator objecten de waarde controleert 
+ * Een validator die via meerdere Validator objecten de waarde controleert
  *
  * @package Validators
  */
-namespace SledgeHammer;
 class Validators extends Object implements Validator {
 
 	public $Validators; // Array met validator objecten
@@ -26,5 +26,7 @@ class Validators extends Object implements Validator {
 		}
 		return true;
 	}
+
 }
+
 ?>
