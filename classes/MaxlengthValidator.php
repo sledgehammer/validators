@@ -1,9 +1,11 @@
 <?php
-namespace SledgeHammer;
+/**
+ * MaxlengthValidator
+ * @package Validators
+ */
+namespace Sledgehammer;
 /**
  * Controleert of het aantal karakters niet te groter is dan de opgegeven lengte.
- *
- * @package Validators
  */
 class MaxlengthValidator extends Object implements Validator {
 

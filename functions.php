@@ -1,22 +1,27 @@
 <?php
-namespace SledgeHammer;
 /**
+ * Global functions
  * @package Validators
  */
+namespace Sledgehammer;
 
 /**
  * Shortcut to use a Validator object.
- *   $Validator = new ValidatorClass;
- *   $is_valid = $Validator->validate($value, $error_message);
+ *   $validator = new ValidatorClass();
+ *   $is_valid = $validator->validate($value, $error_message);
  * Becomes
- *   $is_valid = validate($value, $error_message, new ValidatorClass);
+ *   $is_valid = validate($value, $error_message, new ValidatorClass());
  *
  * @param mixed $value
- * @param string $error_message
- * @param Validator $Validator
+ * @param string $$error
+ * @param Validator $validator
  * @return bool
  */
- function validate($value, &$error_message, Validator $Validator) {
- 	return $Validator->validate($value, $error_message);
- }
+function validate($value, &$error, $validator) {
+	if (method_exists($validator, 'validate') === false) {
+		throw new \Exception('The given "validator" is not compatible with the Validator interface');
+	}
+	return $validator->validate($value, $error);
+}
+
 ?>

@@ -1,5 +1,5 @@
 <?php
-namespace SledgeHammer;
+namespace Sledgehammer;
 /**
  * Een validator die via meerdere Validator objecten de waarde controleert
  *

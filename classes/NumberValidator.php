@@ -1,5 +1,5 @@
 <?php
-namespace SledgeHammer;
+namespace Sledgehammer;
 /**
  * Controleert of de waarde een getal is.
  * Ook is het mogenlijk om te controleren of het om een geheel getal gaat en/of de waarde binnen een bereik valt

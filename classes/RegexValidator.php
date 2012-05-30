@@ -1,5 +1,5 @@
 <?php
-namespace SledgeHammer;
+namespace Sledgehammer;
 /**
  * Door middel van een reguliere expressie de waarde controleren
  *

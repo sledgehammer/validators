@@ -1,5 +1,5 @@
 <?php
-namespace SledgeHammer;
+namespace Sledgehammer;
 /**
  * Voorkomt cross site scripting (XSS)
  * Beschermt tegen javascript en html injecties door "<" en ">" niet toe te staan

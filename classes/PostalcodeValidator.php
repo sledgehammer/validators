@@ -1,5 +1,5 @@
 <?php
-namespace SledgeHammer;
+namespace Sledgehammer;
 /**
  * Controleerd of de postcode voldoet aan de nederlandse postcode notatie
  *

@@ -1,10 +1,11 @@
 <?php
-namespace SledgeHammer;
-
+/**
+ * KeyExistsValidator
+ * @package Validators
+ */
+namespace Sledgehammer;
 /**
  * Controleert of de waarde voorkomt als key in de array.
- *
- * @package Validators
  */
 class KeyExistsValidator extends Object implements Validator {
 
