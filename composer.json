@@ -1,7 +1,8 @@
 {
 	"name": "sledgehammer/validators",
-	"type": "sledgehammer-module",
-	"description": "Object oriented validation.",
+	"description": "Sledgehammer Validation module: Object oriented validation.",
+	"type": "library",
+	"license": "CC-BY-SA-3.0",
 	"require": {
 		"sledgehammer/core": "*"
 	}
